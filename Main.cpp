@@ -1,5 +1,3 @@
-#include "/usr/local/include/SDL2/SDL.h"
-
 #include "Engine.hpp"
 #include "Game.hpp"
 
