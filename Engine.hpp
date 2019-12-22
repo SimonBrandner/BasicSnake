@@ -1,0 +1,33 @@
+#ifndef ENGINECLASS
+#define ENGINECLASS
+
+#include "/usr/local/include/SDL2/SDL.h"
+#include <iostream>
+
+#include "Game.hpp"
+#include "Main.hpp"
+
+class Engine
+{
+public:
+    // Member functions
+    Engine(int, int, int, int, bool *);
+    void update();
+    // Member functions
+private:
+    // Member functions
+    void renderFrame(std::vector<Pixel>);
+    std::string handleSDLEvent();
+    // Member functions
+
+    // Variables
+    SDL_Event sdlEvent;
+    SDL_Window *sdlWindow;
+    SDL_Renderer *sdlRenderer;
+    bool * quit;
+    Game * game;
+    unsigned int loopNumber = 0;
+    // Variables
+};
+
+#endif
