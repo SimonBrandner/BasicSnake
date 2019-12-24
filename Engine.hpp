@@ -1,7 +1,7 @@
 #ifndef ENGINECLASS
 #define ENGINECLASS
 
-#include "/usr/local/include/SDL2/SDL.h"
+#include "SDL.h"
 #include <iostream>
 
 #include "Game.hpp"
